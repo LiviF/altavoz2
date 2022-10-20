@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Vender altavoces</title>
+    </head>
+    <body>
+        <h1>Mi e-shop de altavoces</h1>
+<!-- Esto es por volver al sitio web principal -->
+            <p>
+                <img src="header_website.webp" alt="header_website" width="500">
+            </p>
+            <p>
+                <a href="website_altavoz.html">Volver a mi e-shop de electronicos</a>
+            </p>
+<!-- Form con detalles -->
+        <form>
+            <h3>Que modelo te gustaria mas?</h3>
+            <table border="1" width="50%">
+                <thead>
+                    <tr>
+                        <th>Modelo R4</th>
+                        <th>Modelo R45</th>
+                        <th>Modelo SR1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Black</td>
+                        <td>White</td>
+                        <td>Package</td>
+                    </tr>
+                    <tr>
+                        <td><p><img src="black.webp" alt="Altavoz_R4"></p></td>
+                        <td><p><img src="white.webp" alt="Altavoz_R5"></p></td>
+                        <td><p><img src="new_brand.webp" alt="Altavoz_SR1"></p></td>
+                    </tr>
+                </tbody>
+            </table>
+                <p>
+                    <label>
+                        <select name="Modelo">
+                            <option value="0" disabled selected>Eligelo tu modelo favorito de aqui</option>
+                            <option value="1">R4</option>
+                            <option value="2">R5</option>
+                            <option value="3">SR1</option>
+                        </select>
+                    </label>
+                </p>
+<!-- Por elegir caracteristicas de rango, color -->
+        <fieldset>
+            <h2>Caracteristicas</h2>
+            <p>
+                <label>
+                    Elige el rango de aqui
+                    <input type="range" min="50" max="100">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Elige el color de aqui
+                    <input type="color" name="color">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Elige la cantidad de aqui
+                    <input type="number" name="numero">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Si es un regalo, escribe el texto aqui
+                    <textarea name="mensaje"></textarea>
+                </label>
+            </p>
+        </fieldset>
+<!-- Datos de contacto -->
+        <fieldset>
+                <h3>Datos de contacto</h3>
+                <p>
+                    <label>
+                        Nombre
+                        <input type="text" name="Nombre" placeholder="Pon aqui tu nombre" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Apellido
+                        <input type="text" name="Apellido" placeholder="Pon aqui tu appelido" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Direccion
+                        <input type="text" name="Direccion" placeholder="Pon aqui tu dirrecion" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Email
+                        <input type="text" name="Email" placeholder="Pon aqui tu email" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Telefono
+                        <input type="text" name="Telefono" placeholder="Pon aqui tu telefono" required>
+                    </label>
+                </p>
+        </fieldset>
+<!-- Metodos de pago -->
+        <fieldset>
+                <h3>Metodos de pago</h3>
+                <p>
+                    <label>
+                        Tarjeta bancaria
+                        <input type="password" name="Tarjeta" placeholder="Escribe tus datos aqui" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Paypal
+                        <input type="password" name="Paypal" placeholder="Escribe tus datos aqui" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Tarjeta regalo
+                        <input type="password" name="Tarjeta" placeholder="Pone tu codigo aqui" required>
+                    </label>
+                </p>
+         </fieldset>
+                <p>
+                    <input type="submit" name="Submit">
+                </p>
+            </form>
+        <!-- Footer -->
+            <p>Best Buy / 2022</p>
+    </body>
+</html>
